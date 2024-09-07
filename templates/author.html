@@ -1,0 +1,15 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Author
+{% endblock %}
+
+{% block main %}
+    <form action="/author" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="name" placeholder="Author Name" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+{% endblock %}

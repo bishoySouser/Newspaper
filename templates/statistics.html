@@ -1,0 +1,26 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Statistics
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Posts</th>
+                <th>Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Counts</td>
+                <td>{{ p_count }}</td>
+                <td>{{ a_count }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

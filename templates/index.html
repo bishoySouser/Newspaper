@@ -1,0 +1,21 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+  {%for post in posts%}
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ post["title"] }}</h5>
+        <p class="card-text">{{ post["decription"] }}</p>
+        <div class="info">
+          <p class="auther">{{ post["name"] }}</p>
+          <span>{{ post["created_at"] }}</span>
+        </div>
+      </div>
+    </div>
+  {%endfor%}
+{% endblock %}
